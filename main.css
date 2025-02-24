@@ -1,0 +1,74 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+*:focus{
+    outline: 0;
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0 ,0 ,0);
+}
+
+body {
+    background-color: #ddeefc;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    margin: auto; 
+    padding: 40px 20px;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Estilos de Tarjeta  */
+.card {
+    width: 100%;
+    color: aliceblue;
+    cursor: pointer;
+    max-width: 550px;
+    position: relative;
+    transform: rotateY(0);
+    transform-style: preserve-3d;
+    z-index: 3;
+}
+
+.card .active {
+    transform: rotateY(180deg);
+}
+
+.card > div {
+    padding: 30px;
+    min-height: 315px;
+    display: flex;
+    box-shadow: 0 10px 10px rgba(90 , 116, 148, 0.3);
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Imagen Frontal de la Tarjeta */
+.card .front-card {
+    background: url('https://firebasestorage.googleapis.com/v0/b/fire-fotos-8e3f9.appspot.com/o/img%2Fbg-tarjeta-01.jpg?alt=media&token=73e17b4c-192d-449b-9be7-f9f045b57880') #000000 0 0  / cover no-repeat scroll;
+    width: 100%;
+}
+
+.card .front-card .logo-card { 
+    height: 50px;
+    text-align: right;
+}
+
+.card .front-card .logo-card img {
+    width: 100%;
+    height: 100%;
+    max-width: 100px;
+    object-fit: cover;
+}
+
+.card .front-card .chip {}
+
